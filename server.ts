@@ -3,7 +3,7 @@
  * 首次运行后，deno 会下载并缓存该模块
  */
 import { Application } from "https://deno.land/x/abc@v1.0.0-rc2/mod.ts";
-// denv 用来加载 .env 中配置的环境变量
+// 使用 denv 来加载 .env 中配置的环境变量
 import "https://deno.land/x/denv/mod.ts";
 
 // 余下代码和 express 几乎一样，没什么特别的

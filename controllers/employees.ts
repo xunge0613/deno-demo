@@ -17,7 +17,7 @@ interface Employee {
 
 /**
  * 新增
- * @param c 
+ * @param c Context
  * @returns $oid 目前 deno_mongo 新增时只返回 _id
  */
 export const createEmployee: HandlerFunc = async (c: Context) => {
@@ -45,7 +45,7 @@ export const createEmployee: HandlerFunc = async (c: Context) => {
 
 /**
  * 全量查询
- * @param c 
+ * @param c Context
  * @returns json(Employee[])
  */
 export const fetchAllEmployees: HandlerFunc = async (c: Context) => {
@@ -68,7 +68,7 @@ export const fetchAllEmployees: HandlerFunc = async (c: Context) => {
 
 /**
  * 指定 id 查询
- * @param c 
+ * @param c Context
  * @returns json(Employee)
  */
 export const fetchOneEmployee: HandlerFunc = async (c: Context) => {
@@ -89,8 +89,8 @@ export const fetchOneEmployee: HandlerFunc = async (c: Context) => {
 };
 
 /**
- * 更新
- * @param c 
+ * 更新员工
+ * @param c Context
  * @returns msg string
  */
 export const updateEmployee: HandlerFunc = async (c: Context) => {
@@ -130,7 +130,7 @@ export const updateEmployee: HandlerFunc = async (c: Context) => {
 
 /**
  * 删除
- * @param c 
+ * @param c Context
  * @returns msg string
  */
 export const deleteEmployee: HandlerFunc = async (c: Context) => {
